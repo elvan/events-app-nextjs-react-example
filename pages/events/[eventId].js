@@ -3,7 +3,7 @@ function EventDetailPage() {
     <div>
       <h1>EventDetailPage</h1>
     </div>
-  )
+  );
 }
 
-export default EventDetailPage
+export default EventDetailPage;

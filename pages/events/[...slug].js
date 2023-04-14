@@ -3,7 +3,7 @@ function FilteredEventsPage() {
     <div>
       <h1>FilteredEventsPage</h1>
     </div>
-  )
+  );
 }
 
-export default FilteredEventsPage
+export default FilteredEventsPage;
