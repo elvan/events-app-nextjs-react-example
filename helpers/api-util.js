@@ -1,5 +1,5 @@
 export async function getAllEvents() {
-  const response = await fetch(process.env.DB_URL);
+  const response = await fetch(process.env.NEXT_PUBLIC_DB_URL);
   const data = await response.json();
 
   const events = [];
@@ -28,6 +28,7 @@ export async function getFilteredEvents(dateFilter) {
   const { year, month } = dateFilter;
 
   const allEvents = await getAllEvents();
+  console.log(allEvents);
 
   let filteredEvents = allEvents.filter((event) => {
     const eventDate = new Date(event.date);
